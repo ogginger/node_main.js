@@ -8,14 +8,18 @@ requirejs.config(config);
 
 requirejs([
 	"file",
-	"Snip"
+	"Snip",
+	"test_TestSuite
 ], function(
 	file,
-	Snip
+	Snip,
+	test_TestSuite
 ) {
 	console.log("Main initialized successfully!");
 
-	//*
+	//new test_TestSuite();
+
+	/*
         var xSnip = new Snip({
                 "Dir": __dirname + "/Snippets/",
                 "Snippets": {
