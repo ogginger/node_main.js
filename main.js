@@ -9,7 +9,7 @@ requirejs.config(config);
 requirejs([
 	"file",
 	"Snip",
-	"test_TestSuite
+	"test_TestSuite"
 ], function(
 	file,
 	Snip,
