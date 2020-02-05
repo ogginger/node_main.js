@@ -17,15 +17,18 @@ module.exports = {
 		"async_every": "lib/async_every.min",
 		"AsyncIterator": "lib/async_iterator.min",
 		"AsyncValidate": "lib/async_validate.min",
-		"Functions/log": "lib/log",
+		"Functions/log": "lib/log.min",
 		"Functions/bIsObjectEqual": "lib/is_object_equal.min",
-		"validate": "lib/validate.min"
+		"validate": "lib/validate.min",
+		"xAddTests": "lib/add_tests.min",
+		"add": "Functions/add",
+		"test": "Functions/test"
 	},
         bundles: {
 		"../lib/log.min": [ "log" ],
 		"../lib/snip.min": [ "Snip" ],
 		"../lib/file.min": [ "file" ],
-                "../lib/promise.min": [ "promise" ]
+        "../lib/promise.min": [ "promise" ]
 	},
 	suppress: {
 		nodeShim: true
