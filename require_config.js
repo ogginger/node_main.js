@@ -1,9 +1,9 @@
 //require_config.js: Requirejs configuration.
 
 module.exports = {
-        nodeRequire: require,
-        baseUrl: "TestSuite",
-        paths: {
+	nodeRequire: require,
+	baseUrl: "TestSuite",
+	paths: {
 		"rsvp": "../lib/rsvp.min",
 		"backbone": "../lib/backbone.min",
 		"underscore": "../lib/underscore.min",
@@ -11,7 +11,8 @@ module.exports = {
 		"bIsObjectEqual": "lib/is_object_equal.min",
 		"xGenerateTest": "lib/generate_test.min",
 		"xAddTest": "lib/add_test.min",
-		"bTestAll": "lib/test_all.min",
+		"bTestAll": "lib/bTestAll/bTestAll",
+		"bTestAll_Validation": "lib/bTestAll/bTestAll_Validation",
 		"xGenerateAsyncTest": "lib/generate_async_test.min",
 		"bTestAllAsync": "lib/test_all_async.min",
 		"async_every": "lib/async_every.min",
@@ -28,7 +29,7 @@ module.exports = {
 		"../lib/log.min": [ "log" ],
 		"../lib/snip.min": [ "Snip" ],
 		"../lib/file.min": [ "file" ],
-        "../lib/promise.min": [ "promise" ]
+		"../lib/promise.min": [ "promise" ]
 	},
 	suppress: {
 		nodeShim: true
@@ -61,11 +62,11 @@ module.exports = {
 			exports: "Snip"
 		},
 		"promise": {
-                        deps: [
-                                "rsvp"
-                        ],
-                        exports: "promise"
-                },
+			deps: [
+					"rsvp"
+			],
+			exports: "promise"
+		},
 		"TestSuite": {
 			deps: [
 				"backbone",
